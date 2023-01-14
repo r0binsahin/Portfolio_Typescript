@@ -1,0 +1,249 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+body {
+    margin: 0;
+    padding-top: 120px;
+   background-color: v.$bodyColor;
+
+
+}
+
+.pageHead {
+    background-color:v.$primaryColor;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Righteous', cursive;
+ 
+  
+    
+
+    @include m.desktop {
+       z-index: 50;
+    }
+    
+
+    &__linkBox {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 50px ;
+        display: none;
+        //border-bottom: 3px solid white;
+
+        @include m.desktop{
+            display: inline;
+            transition: opacity 1s ease-in;
+            opacity: 0;
+
+        }
+
+        a:hover {
+            color: v.$secondaryColor;
+        }
+
+        
+        &--mailLink {
+            color: v.$bodyColor;
+            font-size: 2rem;
+            padding-right: 50px;  
+        } 
+        
+        &--linkedinLink{
+            color: v.$bodyColor;
+            font-size: 2rem;
+            padding-right: 50px;  
+            }
+    
+            &--githubLink{
+                color: v.$bodyColor;
+                font-size: 2rem;
+            }  
+    }
+
+    .pageHead__linkBox.show {
+        opacity: 0;
+        @include m.desktop{
+            transition: opacity 1s ease-in;
+            opacity: 1;
+
+            
+        }
+       
+        
+        
+    }
+    
+    &__navContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: auto;
+        padding: 20px;
+      
+
+       @include m.desktop {
+        margin: 40px;
+       }
+
+        
+       &--navBar { 
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1.5rem;
+        display: none;
+        @include m.desktop {
+            display: inline;
+    
+        }
+
+        a:hover {
+            color: v.$secondaryColor;
+        }
+        .start {
+            text-decoration: none;
+            color: v.$bodyColor; 
+            padding-right: 50px;       
+        }
+        .about{
+            text-decoration: none;
+            color: v.$bodyColor;  
+            padding-right: 50px;    
+        }
+
+        .projects {
+            text-decoration: none;
+            color: v.$bodyColor;
+            padding-right: 50px;    
+        }
+
+        .contact {
+            text-decoration: none;
+            color: v.$bodyColor;
+        }
+
+       }
+        
+    }
+}
+    
+
+//-----hamburger
+
+
+
+ .hamButton {
+    position: relative;
+    display: block;
+    width: 70px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-left: auto;
+
+    @include m.desktop {
+        display: none;
+    }
+ }
+
+ .hamButton__bar, .hamButton::after, .hamButton::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: v.$bodyColor;
+    margin: 6px 0px;
+    transition: 0.8s;
+
+}
+
+.hamButton.is-active::before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamButton.is-active::after{
+    transform: rotate(45deg) translate(-8px, -9px);
+}
+
+.hamButton.is-active .hamButton__bar {
+    opacity: 0;
+}
+
+.mobileNav{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color:v.$primaryColor;
+    padding-top: 120px;
+    transition: 0.8s;
+
+    @include m.desktop {
+        display: none;
+    }
+   
+    a {
+        font-family: 'Righteous', cursive;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: v.$bodyColor;
+        font-size: 1.5rem;
+        border-bottom: 1px solid v.$thirdColor; 
+     
+       
+    }
+
+    .mobilecontact {
+        font-family: 'Righteous', cursive;
+        display: block;
+        width: 100%;
+        max-width: 200px;
+        margin: 0 auto 16px;
+        text-align: center;
+        padding: 12px 16px;
+        text-decoration: none;
+        color: v.$bodyColor;
+        font-size: 1.5rem;
+        border-bottom: 1px solid v.$thirdColor; 
+        cursor: pointer;
+        background-color: v.$primaryColor;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+     
+    }
+
+    .mobilecontact:hover {
+        color: v.$secondaryColor;
+    }
+
+
+
+    a:hover {
+        color: v.$secondaryColor;
+    }
+}
+
+.mobileNav.is-active {
+    left: 0;
+}
+
+
+
+
+

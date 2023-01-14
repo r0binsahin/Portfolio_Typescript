@@ -1,0 +1,95 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+.wrapper {
+    width: 100%;
+    font-family: 'Righteous', cursive;
+    margin: 0;
+    padding-right:20px;
+    padding-left:20px;
+    padding-bottom: 50px;
+
+    @include m.desktop{
+        padding:100px;
+    }
+
+    .imgContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 20px;
+
+        @include  m.desktop {
+            //width: 100%;
+            margin-right: 100px;
+        }
+    
+        .startpageImage {
+        width: 40%;
+        border-radius: 50%; 
+    
+        @include m.desktop {
+            width: 20%;
+            //height: 100%;
+    
+        }
+    
+        }
+    }
+
+
+    .mainText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 20px;
+
+
+        @include m.desktop{
+            margin-top: 0;
+        }
+  
+        .nameHeading {
+            color: v.$primaryColor; 
+            font-size: 3rem;
+            text-align: center;
+
+            @include m.desktop {
+                font-size: 5rem;
+                margin-bottom: 30px;
+              
+            }
+    
+        }
+    
+        .shortIntro {
+            color: v.$secondaryColor;
+            margin-top: 20px;
+
+            @include m.desktop{
+                margin-bottom: 30px;
+            }
+        }
+        .introText {
+            color:v.$primaryColor; 
+             font-size: 1.1rem;
+             margin-top: 20px;
+             text-align: justify;
+             text-justify: inter-word;
+             font-family: 'Open Sans', sans-serif;
+
+
+          
+
+
+             @include m.desktop{
+                margin-top: 0;
+             }
+          
+        }
+    }
+
+}
+

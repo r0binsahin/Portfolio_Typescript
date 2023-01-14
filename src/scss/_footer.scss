@@ -1,0 +1,70 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.pageFoot {
+    width: 100%;
+    height: 200px;
+    background-color: v.$primaryColor;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+
+    
+
+    &__telBox {
+        display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+        width: 100%;
+        color: white;
+  
+
+        &--name{
+           font-size: 1.3rem;
+        }
+
+        &--tel {
+            //margin: 0;
+        }
+    }
+
+
+    &__linkBox {
+        width: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+     
+
+       
+
+        a:hover {
+            color: v.$secondaryColorLight;
+        }
+
+        
+        &--mailLink {
+            color: white;
+            padding-right: 30px;  
+
+         
+        } 
+        
+        &--linkedinLink{
+            color: white;
+            padding-right: 30px;  
+            //padding: 20px;
+        
+            }
+    
+            &--githubLink{
+                color: white;
+            
+            }  
+    }
+
+}

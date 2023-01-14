@@ -1,0 +1,171 @@
+@use "mixins" as m;
+@use "variables" as v;
+
+#empty {
+    width: 100%;
+    height: 50px;
+    opacity: 0;
+}
+
+
+.projectContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+
+
+    @include m.desktop{
+        padding: 150px;
+        padding-bottom: 300px;
+
+    }
+  
+   
+
+    
+
+    .heading {
+        width: 100%;
+        color: white;
+        font-size: 3rem;
+        padding-top: 0;
+        padding: 30px;
+        text-align: center;
+        font-family: 'Righteous', cursive;
+    }
+    .cardWrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  
+        
+        @include m.desktop {
+            flex-direction: row;
+        }
+ }
+
+    .cardContainer {
+        background-color: transparent;
+        width: 250px;
+        height: 500px;
+        perspective: 1000px;
+        margin: 50px;
+
+        
+
+        &__card {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            border-radius: 25px;
+
+       
+       
+            &--front {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
+
+               .pImg {
+                width: 100%;
+                height: 100%;
+               }
+         
+
+              
+          
+            }
+
+            &--back {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                color: white;
+                transform: rotateY(180deg);
+                border-radius: 30px;
+               background-color: black;
+               // font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 10px  rgba(245, 236, 236, 0.2);
+                font-family: 'Open Sans', sans-serif;
+                font-size: 0.8rem;
+
+                .pName {
+                    box-shadow: 0 0 10px  rgba(254, 253, 253, 0.2);
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-right: 10px;
+                    padding-left: 10px;
+                    border-radius: 15px;
+                    margin: 5px;
+                }
+                 
+                .pDesc {
+                    text-align: start;
+                    padding: 20px;
+                    box-shadow: 0 0 10px  rgba(254, 253, 253, 0.2);
+                    margin: 15px;
+                    border-radius: 15px;
+                    text-align: justify;
+                    text-justify: inter-word;
+
+                }
+
+                .pLink, .pGHLink {
+                    width: 75px;
+                    box-shadow: 0 0 10px  rgba(254, 253, 253, 0.2);
+                    /*padding-top: 5px;
+                    padding-bottom: 5px;
+                    padding-right: 10px;
+                    padding-left: 10px; */
+                    border-radius: 15px;
+                    padding: 5px;
+                    text-decoration: none;
+                    color: white;
+                    margin-bottom: 5px;
+                    text-align: center;
+                }
+
+                .pLink:hover, .pGHLink:hover {
+                    cursor: pointer;
+                    width: 100px;
+                   background-color: #0f3aba;
+                    
+                }
+
+                .pLang {
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    padding: 20px;
+                    p {
+                        background-color: #0f3aba;
+                        font-size: 0.6rem;
+                        font-weight:bolder;
+                        border-radius: 5px;
+                        margin:5px;
+                    }
+                }
+            }
+        }
+
+        &__card:hover {
+            transform: rotateY(180deg);
+            cursor: pointer;
+        }
+    }
+}
