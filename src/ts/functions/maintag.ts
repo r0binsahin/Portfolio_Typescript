@@ -6,10 +6,7 @@ export function mainTag() {
 
   mainH1.innerHTML = "Hi, I'm Robin!";
   mainH3.innerHTML = "Stockholm-based junior front-end developer";
-  introText.innerHTML = ` I am a curious and dedicated junior programmer studying Frontend development at Medieinstitutet in Stockholm. I am fascinated by the endless possibilities and inspiration that programming offers and enjoy increasing my skills constantly. <br> <br>
-
-  Right now, I am looking for an internship for autumn 2023 where I can apply what I have learned during my education and boost my skills in frontend development.<br> <br>
-  Take a tour on my website and don't hesitate to contact me if you have a recommendation or an internship offer.`;
+  introText.innerHTML = ` I am a dedicated and curious junior front-end developer based in Stockholm and currently studying at Medieinstitutet. I have a strong passion for coding and problem solving, and I am always eager to learn and develop my skills. I am committed to delivering quality work, and I am not afraid to take on challenging tasks and strive for excellence. I am a team player, and I understand the importance of collaboration and communication in the development process.`;
 
   //mainText.classList.add("mainText", "col-sm-12", "col-md-6", "col-lg-6");
   mainH1.classList.add("nameHeading");

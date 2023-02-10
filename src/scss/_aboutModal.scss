@@ -5,7 +5,7 @@
 
 .aboutModal {
   font-family: 'Open Sans', sans-serif;
-  background-color: white;
+  background-color: #949090;
   position: fixed;
   bottom: 100%;
   left: 0;
@@ -27,9 +27,9 @@
 
 
  @include m.desktop {
-    border-right: 20px solid v.$secondaryColor;
-    border-left: 20px solid  v.$secondaryColor;
-    border-bottom: 20px solid  v.$secondaryColor; 
+    //border-right: 10px solid v.$secondaryColor;
+   // border-left: 10px solid  v.$secondaryColor;
+    border-bottom: 10px solid  v.$secondaryColor; 
  }
 
  &__content {
@@ -57,16 +57,16 @@
   }
 
   &--close {
-    width: 50%;
+    width: 20%;
     border: none;
     border-radius: 15px;
-    background-color: v.$primaryColor;
-    color: white;
+    background-color: v.$secondaryColor;
+    color: black;
     box-shadow: 0 0 5px 0 rgb(183, 178, 178);
     margin: 50px;
 
     @include m.desktop{
-      width: 30%;
+      width: 10%;
     }
   }
  }

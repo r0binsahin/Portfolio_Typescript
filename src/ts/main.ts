@@ -7,12 +7,14 @@ import { projectCards } from "./functions/projectCards";
 import { hideMobileNav } from "./functions/hideMobileNav";
 import { displayLinkBox } from "./functions/displayLinkBox";
 import { displayMySkills } from "./functions/displayMySkills";
+import { desktopContactModalToggle } from "./functions/desktopContactModal";
 
 displayMobileNav();
 hideMobileNav();
 mainTag();
+desktopContactModalToggle();
 projectCards();
-contactIcons();
+//contactIcons();
 displayMySkills();
 contactIconsFooter();
 modalToggle();

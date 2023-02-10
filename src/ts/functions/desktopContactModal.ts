@@ -1,25 +1,19 @@
-export const aboutModalToggle = () => {
-  const mobileAbout = document.querySelector(
-    ".mobileabout"
+export const desktopContactModalToggle = () => {
+  const desktopContact = document.querySelector(
+    ".contact"
   ) as HTMLAnchorElement;
 
-  const desktopAbout = document.querySelector(".about") as HTMLAnchorElement;
-
   const modalContainer = document.querySelector(
-    ".aboutModal"
+    ".desktopContactModal"
   ) as HTMLDivElement;
 
   const closeBtn = document.querySelector(
-    ".aboutModal__content--close"
+    ".desktopContactModal__content--close"
   ) as HTMLButtonElement;
 
   /*const modalHeader = document.querySelector(
     ".aboutModal__content--header"
-  ) as HTMLHeadingElement; */
-
-  mobileAbout.addEventListener("click", () => {
-    modalContainer.classList.add("show");
-  });
+  ) as HTMLHeadingElement;  */
 
   modalContainer.addEventListener("click", () => {
     modalContainer.classList.remove("show");
@@ -29,7 +23,7 @@ export const aboutModalToggle = () => {
     modalContainer.classList.remove("show");
   });
 
-  desktopAbout.addEventListener("click", () => {
+  desktopContact.addEventListener("click", () => {
     modalContainer.classList.toggle("show");
   });
 };

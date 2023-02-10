@@ -3,8 +3,8 @@
 
 .pageFoot {
     width: 100%;
-    height: 200px;
-    background-color: v.$primaryColor;
+    height: 250px;
+    background-color: v.$secondaryColor;
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -20,15 +20,15 @@
        align-items: center;
        justify-content: center;
         width: 100%;
-        color: white;
+        color: black;
   
 
         &--name{
-           font-size: 1.3rem;
+           font-size: 1.5rem;
         }
 
         &--tel {
-            //margin: 0;
+            font-size: 1.3rem;
         }
     }
 
@@ -48,21 +48,24 @@
 
         
         &--mailLink {
-            color: white;
+            color: black;
             padding-right: 30px;  
+            font-size: 2.5rem;
 
          
         } 
         
         &--linkedinLink{
-            color: white;
+            color: black;
             padding-right: 30px;  
             //padding: 20px;
+            font-size: 2.5rem;
         
             }
     
             &--githubLink{
-                color: white;
+                color: black;
+                font-size: 2.5rem;
             
             }  
     }

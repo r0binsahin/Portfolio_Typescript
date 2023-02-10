@@ -49,7 +49,7 @@ export let mySkills: Skills[] = [
     "Rest API"
   ),
   new Skills(
-    "https://cdn.icon-icons.com/icons2/512/PNG/512/dbs-mongodb_icon-icons.com_50910.png",
+    "https://icons.veryicon.com/png/o/miscellaneous/gwidc_1/mongodb.png",
     "MongoDB"
   ),
   new Skills("https://img.icons8.com/sf-black-filled/512/sql.png", "SQL"),

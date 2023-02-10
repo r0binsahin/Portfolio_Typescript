@@ -49,30 +49,31 @@ border-left: 5px solid v.$secondaryColor;
    
 
     a {
-        color: v.$secondaryColor;
+        color: black;
         font-size: 2rem;
     }
 
     a:hover {
-        color: v.$secondaryColorLight;
-        font-size: 2.2rem;
+        color: v.$secondaryColor;
+        font-size: 2.1rem;
     }
 
     button {
-        width: 100%;
-        padding: 5px;
+        width: 75%;
+        //padding: 5px;
         border: none;
-        border-radius: 5px;
+        border-radius: 15px;
+        
         background-color: v.$primaryColor;
         color: white;
         box-shadow: 0 0 5px 0 rgb(183, 178, 178);
-        font-family: 'Righteous', cursive;
+       // font-family: 'Righteous', cursive;
      
         
     }
 
     button:hover {
-        font-size: 1.2rem;
+        background-color: v.$secondaryColor;
     }
 
 

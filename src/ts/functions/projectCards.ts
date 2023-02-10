@@ -20,6 +20,7 @@ export const projectCards = () => {
 
   for (let i = 0; i < projectList.length; i++) {
     const cardContainer = document.createElement("div");
+
     const card = document.createElement("div");
     const front = document.createElement("div");
     const back = document.createElement("div");
@@ -31,6 +32,10 @@ export const projectCards = () => {
     const pLang = document.createElement("p");
 
     cardContainer.classList.add("cardContainer");
+    cardContainer.className += " col-sm-12";
+    cardContainer.className += " col-md-6";
+    cardContainer.className += " col-lg-4";
+
     card.classList.add("cardContainer__card");
 
     front.classList.add("cardContainer__card--front");

@@ -1,6 +1,3 @@
-import { IGitRepos } from "../models/IGitRepos";
-import { getRepos } from "../services/reposservice";
-
 export function contactIcons() {
   const linkBox = document.createElement("div");
 
@@ -14,7 +11,7 @@ export function contactIcons() {
   gitHubLink.classList.add("pageHead__linkBox--githubLink");
 
   mailLink.href = "mailto:robin.sahin88@gmail.com";
-  mailLink.innerHTML = `<i class="fa-solid fa-envelope"></i>`;
+  mailLink.innerHTML = `<i class="bi bi-envelope-at-fill"></i>`;
   linkedInLink.innerHTML = `<i class="fa-brands fa-linkedin"></i>`;
   linkedInLink.href = "https://www.linkedin.com/in/robin-sahin-15404a24b/";
   gitHubLink.innerHTML = `<i class="fa-brands fa-square-github"></i>`;

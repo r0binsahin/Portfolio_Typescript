@@ -2,28 +2,37 @@ import { Project } from "../models/Project";
 
 export let projects: Project[] = [
   new Project(
-    "https://i.postimg.cc/nhxp8y3V/bookshop.png",
+    "https://i.postimg.cc/FzGnSXGR/travelwishlist-cover.png",
+    "Travel Whishlist",
+    "A travel wishlist created with GraphQL. Add a city to your wishlist. Remove it to the visited cities' list and delete from your wishlist. You can see the total amount of cities you have visited",
+    "/src/projects/travel_wishlist/index.html",
+    "https://github.com/robinsahin88/Travel_wishlist_GraphQL.git",
+    `<p>GraphQL</p><p>Apollo</p><p>Javascript</p><p>HTML</p><p>CSS</p><p>Flexbox</p>`
+  ),
+
+  new Project(
+    "https://i.postimg.cc/ZRtgtcCT/bookshop-cover.png",
     "Selmas Books",
     "A bookshop where you can buy some of Selma Lagerlöf's books. This was a teamwork project made by me and my classmates Lisa and Micke. We followed Scrum and Jira were followed.",
-    "https://github.com/robinsahin88/Bookshop.git",
+    "https://selmasbookshop.netlify.app/",
     "https://github.com/robinsahin88/Bookshop.git",
     `<p>Typescript</p><p>HTML</p><p>SCSS</p><p>Flexbox</p><p>Bootstraps</p><p>Parceljs</p>`
   ),
   new Project(
-    "https://i.postimg.cc/Gmm97ZzR/moviedatabase-mobile-iphone-8-plus.png",
+    "https://i.postimg.cc/bJx5ztt1/movieland-cover.png",
     "MovieLand",
     "Welcome to one of the biggest movie databases based on OMDB-API. You can search among over 4200 movies from all around the world. Type something in the searching area to find a movie",
-    "https://github.com/robinsahin88/Moviedatabase.git",
+    "../../projects/movieland/index.html",
     "https://github.com/robinsahin88/Moviedatabase.git",
     `<p>Typescript</p><p>HTML</p><p>SCSS</p><p>Flexbox</p><p>Bootstraps</p><p>Parceljs</p>`
   ),
 
   new Project(
-    "https://i.postimg.cc/tJMX2QGT/todolist.png",
+    "https://i.postimg.cc/7hqWbZ3d/todo-cover.png",
     "Todo-list",
-    "This is an application where you can create a todo-list. Type next errand to do and check it when completed. Clear checked errand or the whole list when you are done.",
-    "https://github.com/robinsahin88/TODO.git",
-    "https://github.com/robinsahin88/TODO.git",
+    "This is an application where you can create a todo-list. Type next errand to do and check it when completed. Clear checked errand or the whole list when you are done. My first school project with Javascript.",
+    "https://robinsahin88.github.io/TODO-List/",
+    "https://github.com/robinsahin88/TODO-List",
     `<p>Javascript</p><p>HTML</p><p>SCSS</p><p>Flexbox</p><p>Bootstraps</p><p>Parceljs</p>`
   ),
 ];

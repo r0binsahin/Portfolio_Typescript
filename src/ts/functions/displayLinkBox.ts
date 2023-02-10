@@ -4,7 +4,12 @@ export const displayLinkBox = () => {
     ".pageHead__linkBox"
   ) as HTMLDivElement;
 
+  const arrow: HTMLDivElement = document.querySelector(
+    ".pageHead__arrow"
+  ) as HTMLDivElement;
+
   contactLink.addEventListener("click", () => {
     linkBox.classList.toggle("show");
+    arrow.classList.toggle("moving");
   });
 };
