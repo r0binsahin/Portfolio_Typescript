@@ -1,28 +1,3 @@
-export function contactIcons() {
-  const linkBox = document.createElement("div");
-
-  const mailLink = document.createElement("a");
-  const linkedInLink = document.createElement("a");
-  const gitHubLink = document.createElement("a");
-
-  linkBox.classList.add("pageHead__linkBox");
-  mailLink.classList.add("pageHead__linkBox--mailLink");
-  linkedInLink.classList.add("pageHead__linkBox--linkedinLink");
-  gitHubLink.classList.add("pageHead__linkBox--githubLink");
-
-  mailLink.href = "mailto:robin.sahin88@gmail.com";
-  mailLink.innerHTML = `<i class="bi bi-envelope-at-fill"></i>`;
-  linkedInLink.innerHTML = `<i class="fa-brands fa-linkedin"></i>`;
-  linkedInLink.href = "https://www.linkedin.com/in/robin-sahin-15404a24b/";
-  gitHubLink.innerHTML = `<i class="fa-brands fa-square-github"></i>`;
-  gitHubLink.href = "https://github.com/robinsahin88";
-
-  const pageHead = document.querySelector(".pageHead") as HTMLElement;
-
-  pageHead.appendChild(linkBox);
-  linkBox.append(mailLink, linkedInLink, gitHubLink);
-}
-
 export function contactIconsFooter() {
   const linkBox = document.createElement("div");
   const telBox = document.createElement("div");

@@ -1,5 +1,5 @@
 import { aboutModalToggle } from "./functions/aboutModal";
-import { contactIcons, contactIconsFooter } from "./functions/contactIcons";
+import { contactIconsFooter } from "./functions/contactIcons";
 import { mainTag } from "./functions/maintag";
 import { modalToggle } from "./functions/contactModal";
 import { displayMobileNav } from "./functions/navbar";
@@ -14,7 +14,6 @@ hideMobileNav();
 mainTag();
 desktopContactModalToggle();
 projectCards();
-//contactIcons();
 displayMySkills();
 contactIconsFooter();
 modalToggle();

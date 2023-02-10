@@ -15,14 +15,12 @@
  pointer-events: none;
  opacity: 0;
  z-index: 99;
- //margin: auto;
  transition: 0.8s;
 border-left: 5px solid v.$secondaryColor;
 
  @include m.desktop {
     opacity: 0;
  }
-
 
  .modalcontent {
     width: 200;
@@ -42,12 +40,6 @@ border-left: 5px solid v.$secondaryColor;
     transform: translate(-50%, -50%);
     transition: 0.8s;
 
-  
- 
-   
-
-   
-
     a {
         color: black;
         font-size: 2rem;
@@ -60,23 +52,17 @@ border-left: 5px solid v.$secondaryColor;
 
     button {
         width: 75%;
-        //padding: 5px;
         border: none;
         border-radius: 15px;
         
         background-color: v.$primaryColor;
         color: white;
         box-shadow: 0 0 5px 0 rgb(183, 178, 178);
-       // font-family: 'Righteous', cursive;
-     
-        
     }
 
     button:hover {
         background-color: v.$secondaryColor;
     }
-
-
  }
 }
 

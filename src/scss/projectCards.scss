@@ -7,7 +7,6 @@
     opacity: 0;
 }
 
-
 .projectContainer {
     width: 100%;
     display: flex;
@@ -15,18 +14,12 @@
     align-items: center;
     justify-content: center;
     margin: 0;
-    
-
 
     @include m.desktop{
         padding: 150px;
         padding-bottom: 300px;
 
     }
-  
-   
-
-    
 
     .heading {
         width: 100%;
@@ -56,8 +49,6 @@
         perspective: 1000px;
         margin: 50px;
 
-        
-
         &__card {
             position: relative;
             width: 100%;
@@ -67,8 +58,6 @@
             transform-style: preserve-3d;
             border-radius: 25px;
 
-       
-       
             &--front {
                 position: absolute;
                 width: 100%;
@@ -133,7 +122,6 @@
 
                 .pLink:hover, .pGHLink:hover {
                     cursor: pointer;
-                    //width: 100px;
                    background-color: v.$primaryColor
                     
                 }

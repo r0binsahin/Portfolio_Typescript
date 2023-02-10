@@ -5,30 +5,20 @@ body {
     margin: 0;
     padding-top: 120px;
      background-color: v.$primaryColor;
-
-
 }
 
 .pageHead {
     background-color:v.$primaryColor;
     display: flex;
     flex-direction: row;
-   justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Righteous', cursive;
-   
- 
-  
-    
 
     @include m.desktop {
        z-index: 50;
     }
-    
-   
-
-    
-
+  
     &__linkBox {
         display: flex;
         flex-direction: row;
@@ -37,19 +27,16 @@ body {
         padding: 50px ;
         display: none;
 
-
         @include m.desktop{
             display: inline;
             transition: opacity 1s ease-in;
             opacity: 0;
-
         }
 
         a:hover {
             color: v.$secondaryColor;
         }
 
-        
         &--mailLink {
            color: white;
             font-size: 2rem;
@@ -62,24 +49,19 @@ body {
             padding-right: 50px;  
             }
     
-            &--githubLink{
-                color: white;
-                font-size: 2rem;
-            }  
+        &--githubLink{
+            color: white;
+            font-size: 2rem;
+         }  
     }
-
 
     .pageHead__linkBox.show {
         opacity: 0;
         @include m.desktop{
             transition: opacity 1s ease-in;
             opacity: 1;
-
-            
         }
-       
-        
-        
+
     }
     
     &__navContainer {
@@ -89,12 +71,10 @@ body {
         margin-left: auto;
         padding: 20px;
       
-
        @include m.desktop {
         margin: 40px;
        }
-
-        
+ 
        &--navBar { 
         display: flex;
         flex-direction: row;
@@ -102,9 +82,9 @@ body {
         align-items: center;
         font-size: 1.5rem;
         display: none;
+
         @include m.desktop {
             display: inline;
-    
         }
 
         a:hover {
@@ -131,17 +111,12 @@ body {
             text-decoration: none;
             color: white;
         }
-
        }
-        
     }
 }
     
 
 //-----hamburger
-
-
-
  .hamButton {
     position: relative;
     display: block;
@@ -209,8 +184,6 @@ body {
         color: white;
         font-size: 1.5rem;
         border-bottom: 1px solid v.$secondaryColor; 
-     
-       
     }
 
     .mobilecontact {
@@ -230,14 +203,11 @@ body {
         border-top: none;
         border-left: none;
         border-right: none;
-     
     }
 
     .mobilecontact:hover {
         color: v.$secondaryColor;
     }
-
-
 
     a:hover {
         color: v.$secondaryColor;

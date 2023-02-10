@@ -11,10 +11,6 @@ export const desktopContactModalToggle = () => {
     ".desktopContactModal__content--close"
   ) as HTMLButtonElement;
 
-  /*const modalHeader = document.querySelector(
-    ".aboutModal__content--header"
-  ) as HTMLHeadingElement;  */
-
   modalContainer.addEventListener("click", () => {
     modalContainer.classList.remove("show");
   });
