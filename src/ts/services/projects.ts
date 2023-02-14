@@ -5,7 +5,7 @@ export let projects: Project[] = [
     "https://i.postimg.cc/FzGnSXGR/travelwishlist-cover.png",
     "Travel Whishlist",
     "A travel wishlist created with GraphQL. Add a city to your wishlist. Remove it to the visited cities' list and delete from your wishlist. You can see the total amount of cities you have visited",
-    "/src/projects/travel_wishlist/index.html",
+    "https://movieland.tech/?",
     "https://github.com/robinsahin88/Travel_wishlist_GraphQL.git",
     `<p>GraphQL</p><p>Apollo</p><p>Javascript</p><p>HTML</p><p>CSS</p><p>Flexbox</p>`
   ),
