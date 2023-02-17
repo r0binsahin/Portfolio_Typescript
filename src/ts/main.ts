@@ -8,6 +8,7 @@ import { hideMobileNav } from "./functions/hideMobileNav";
 import { displayLinkBox } from "./functions/displayLinkBox";
 import { displayMySkills } from "./functions/displayMySkills";
 import { desktopContactModalToggle } from "./functions/desktopContactModal";
+import { displayOtherProjects } from "./functions/displayOtherProjects";
 
 displayMobileNav();
 hideMobileNav();
@@ -15,6 +16,7 @@ mainTag();
 desktopContactModalToggle();
 projectCards();
 displayMySkills();
+displayOtherProjects();
 contactIconsFooter();
 modalToggle();
 aboutModalToggle();
