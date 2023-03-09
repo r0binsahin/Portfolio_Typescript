@@ -53,7 +53,9 @@ export const projectCards = () => {
     pName.innerHTML = projectList[i].projectName;
     pDesc.innerHTML = projectList[i].projectDesc;
     pLink.href = projectList[i].projectLink;
+    pLink.target = "_blank";
     pGHLink.href = projectList[i].projectGHLink;
+    pGHLink.target = "_blank";
     pLang.innerHTML = projectList[i].projectLanguages;
 
     cardWrapper.appendChild(cardContainer);
