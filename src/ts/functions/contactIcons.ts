@@ -24,8 +24,10 @@ export function contactIconsFooter() {
   mailLink.innerHTML = `<i class="fa-solid fa-envelope"></i>`;
   linkedInLink.innerHTML = `<i class="fa-brands fa-linkedin"></i>`;
   linkedInLink.href = "https://www.linkedin.com/in/robin-sahin-15404a24b/";
+  linkedInLink.target = "_blank";
   gitHubLink.innerHTML = `<i class="fa-brands fa-square-github"></i>`;
-  gitHubLink.href = "https://github.com/robinsahin88";
+  gitHubLink.href = "https://github.com/r0binsahin";
+  gitHubLink.target = "_blank";
 
   const pageFoot = document.querySelector(".pageFoot") as HTMLElement;
 
