@@ -2,6 +2,23 @@ import { Project } from "../models/Project";
 
 export let projects: Project[] = [
   new Project(
+    "https://i.postimg.cc/DZfq3Kq6/peyvok-tr.png",
+    "Peyvok",
+    "This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.",
+    "https://peyvok.netlify.app/",
+    "https://github.com/r0binsahin/Peyvok.git",
+    `<p>React Native</p><p>Typescript</p><p>MongoDB Realm</p>`
+  ),
+  new Project(
+    "https://i.postimg.cc/L5ZkK2rG/zoo-1.png",
+    "Peyvok",
+    "This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.",
+    "https://minzoo.netlify.app/",
+    "https://github.com/r0binsahin/Peyvok.git",
+    `<p>React</p><p>Typescript</p><p>SCSS</p>`
+  ),
+
+  new Project(
     "https://i.postimg.cc/FzGnSXGR/travelwishlist-cover.png",
     "Travel Whishlist",
     "A travel wishlist created with GraphQL. Add a city to your wishlist. Remove it to the visited cities. You can see the total amount of cities you have visited",
@@ -22,7 +39,7 @@ export let projects: Project[] = [
     "https://i.postimg.cc/bJx5ztt1/movieland-cover.png",
     "MovieLand",
     "Welcome to one of the biggest movie databases based on OMDB-API. You can search among over 4200 movies from all around the world. Type something in the searching area to find a movie",
-    "../../projects/movieland/index.html",
+    "https://movieinformationapp.netlify.app/",
     "https://github.com/r0binsahin/Moviedatabase.git",
     `<p>Typescript</p><p>HTML</p><p>SCSS</p><p>Flexbox</p><p>Bootstraps</p><p>Parceljs</p>`
   ),
