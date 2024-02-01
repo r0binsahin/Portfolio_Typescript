@@ -11,8 +11,8 @@ export let projects: Project[] = [
   ),
   new Project(
     "https://i.postimg.cc/L5ZkK2rG/zoo-1.png",
-    "Peyvok",
-    "This project is a React Native mobile application developed as final project for my Frontend Development education at Medieinstitutet in Stockholm 2022-2024.",
+    "The zoo",
+    "Here you'll find our food-loving animals who are often hungry. Feel free to come in, get to know them, and feed them if they're hungry. They need to be fed every three hours. They're probably starving right now. So hurry up and feed them. ",
     "https://minzoo.netlify.app/",
     "https://github.com/r0binsahin/Peyvok.git",
     `<p>React</p><p>Typescript</p><p>SCSS</p>`
